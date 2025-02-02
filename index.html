@@ -1,0 +1,1319 @@
+       <html lang="en">
+    
+<head>
+
+        <title>Soniya Jain</title>
+
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.css">
+        <link rel="stylesheet" href="assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
+
+        <!-- Fonts and Dashmix framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap">
+        <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
+
+        
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+        <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick-carousel/slick-theme.css">
+        
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available classes for #page-container:
+
+        GENERIC
+
+            'enable-cookies'                            Remembers active color theme between pages (when set through color theme helper Template._uiHandleTheme())
+
+        SIDEBAR & SIDE OVERLAY
+
+            'sidebar-r'                                 Right Sidebar and left Side Overlay (default is left Sidebar and right Side Overlay)
+            'sidebar-mini'                              Mini hoverable Sidebar (screen width > 991px)
+            'sidebar-o'                                 Visible Sidebar by default (screen width > 991px)
+            'sidebar-o-xs'                              Visible Sidebar by default (screen width < 992px)
+            'sidebar-dark'                              Dark themed sidebar
+
+            'side-overlay-hover'                        Hoverable Side Overlay (screen width > 991px)
+            'side-overlay-o'                            Visible Side Overlay by default
+
+            'enable-page-overlay'                       Enables a visible clickable Page Overlay (closes Side Overlay on click) when Side Overlay opens
+
+            'side-scroll'                               Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (screen width > 991px)
+
+        HEADER
+
+            ''                                          Static Header if no class is added
+            'page-header-fixed'                         Fixed Header
+
+
+        Footer
+
+            ''                                          Static Footer if no class is added
+            'page-footer-fixed'                         Fixed Footer (please have in mind that the footer has a specific height when is fixed)
+
+        HEADER STYLE
+
+            ''                                          Classic Header style if no class is added
+            'page-header-dark'                          Dark themed Header
+            'page-header-glass'                         Light themed Header with transparency by default
+                                                        (absolute position, perfect for light images underneath - solid light background on scroll if the Header is also set as fixed)
+            'page-header-glass page-header-dark'         Dark themed Header with transparency by default
+                                                        (absolute position, perfect for dark images underneath - solid dark background on scroll if the Header is also set as fixed)
+
+        MAIN CONTENT LAYOUT
+
+            ''                                          Full width Main Content if no class is added
+            'main-content-boxed'                        Full width Main Content with a specific maximum width (screen width > 1200px)
+            'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
+        -->
+        <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+            <!-- Side Overlay-->
+            <aside id="side-overlay">
+                <!-- Side Header -->
+                <div class="bg-image" style="background-image: url('assets/media/various/bg_side_overlay_header.jpg');">
+                    <div class="bg-primary-op">
+                        <div class="content-header">
+                            <!-- User Avatar -->
+                            <a class="img-link mr-1" href="be_pages_generic_profile.html">
+                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar10.jpg" alt="">
+                            </a>
+                            <!-- END User Avatar -->
+
+                            <!-- User Info -->
+                            <div class="ml-2">
+                                <a class="text-white font-w600" href="be_pages_generic_profile.html">George Taylor</a>
+                                <div class="text-white-75 font-size-sm">Full Stack Developer</div>
+                            </div>
+                            <!-- END User Info -->
+
+                            <!-- Close Side Overlay -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="ml-auto text-white" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+                                <i class="fa fa-times-circle"></i>
+                            </a>
+                            <!-- END Close Side Overlay -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Content -->
+                <div class="content-side">
+                    <!-- Side Overlay Tabs -->
+                    <div class="block block-transparent pull-x pull-t">
+                        <ul class="nav nav-tabs nav-tabs-block nav-justified" data-toggle="tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#so-settings">
+                                    <i class="fa fa-fw fa-cog"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#so-people">
+                                    <i class="far fa-fw fa-user-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#so-profile">
+                                    <i class="far fa-fw fa-edit"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="block-content tab-content overflow-hidden">
+                            <!-- Settings Tab -->
+                            <div class="tab-pane pull-x fade fade-up show active" id="so-settings" role="tabpanel">
+                                <div class="block mb-0">
+                                    <!-- Color Themes -->
+                                    <!-- Toggle Themes functionality initialized in Template._uiHandleTheme() -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Color Themes</span>
+                                    </div>
+                                    <div class="block-content block-content-full">
+                                        <div class="row gutters-tiny text-center">
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-default" data-toggle="theme" data-theme="default" href="#">
+                                                    Default
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xwork" data-toggle="theme" data-theme="assets/css/themes/xwork.min.css" href="#">
+                                                    xWork
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xmodern" data-toggle="theme" data-theme="assets/css/themes/xmodern.min.css" href="#">
+                                                    xModern
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xeco" data-toggle="theme" data-theme="assets/css/themes/xeco.min.css" href="#">
+                                                    xEco
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xsmooth" data-toggle="theme" data-theme="assets/css/themes/xsmooth.min.css" href="#">
+                                                    xSmooth
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xinspire" data-toggle="theme" data-theme="assets/css/themes/xinspire.min.css" href="#">
+                                                    xInspire
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xdream" data-toggle="theme" data-theme="assets/css/themes/xdream.min.css" href="#">
+                                                    xDream
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xpro" data-toggle="theme" data-theme="assets/css/themes/xpro.min.css" href="#">
+                                                    xPro
+                                                </a>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <a class="d-block py-3 text-white font-size-sm font-w600 bg-xplay" data-toggle="theme" data-theme="assets/css/themes/xplay.min.css" href="#">
+                                                    xPlay
+                                                </a>
+                                            </div>
+                                            <div class="col-12">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" href="be_ui_color_themes.html">All Color Themes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Color Themes -->
+
+                                    <!-- Sidebar -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Sidebar</span>
+                                    </div>
+                                    <div class="block-content block-content-full">
+                                        <div class="row gutters-tiny text-center">
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="sidebar_style_dark" href="javascript:void(0)">Dark</a>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="sidebar_style_light" href="javascript:void(0)">Light</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Sidebar -->
+
+                                    <!-- Header -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Header</span>
+                                    </div>
+                                    <div class="block-content block-content-full">
+                                        <div class="row gutters-tiny text-center mb-2">
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="header_style_dark" href="javascript:void(0)">Dark</a>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="header_style_light" href="javascript:void(0)">Light</a>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="header_mode_fixed" href="javascript:void(0)">Fixed</a>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="header_mode_static" href="javascript:void(0)">Static</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Header -->
+
+                                    <!-- Content -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Content</span>
+                                    </div>
+                                    <div class="block-content block-content-full">
+                                        <div class="row gutters-tiny text-center">
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="content_layout_boxed" href="javascript:void(0)">Boxed</a>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="content_layout_narrow" href="javascript:void(0)">Narrow</a>
+                                            </div>
+                                            <div class="col-12 mb-1">
+                                                <a class="d-block py-3 bg-body-dark font-w600 text-dark" data-toggle="layout" data-action="content_layout_full_width" href="javascript:void(0)">Full Width</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END Content -->
+
+                                    <!-- Layout API -->
+                                    <div class="block-content row justify-content-center border-top">
+                                        <div class="col-9">
+                                            <a class="btn btn-block btn-hero-primary" href="be_layout_api.html">
+                                                <i class="fa fa-fw fa-flask mr-1"></i> Layout API
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- END Layout API -->
+                                </div>
+                            </div>
+                            <!-- END Settings Tab -->
+
+                            <!-- People -->
+                            <div class="tab-pane pull-x fade fade-up" id="so-people" role="tabpanel">
+                                <div class="block mb-0">
+                                    <!-- Online -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Online</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-items">
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar8.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Lisa Jenkins</div>
+                                                        <div class="font-size-sm text-muted">Photographer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar13.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Thomas Riley</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Web Designer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar5.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Laura Carr</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Web Developer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Online -->
+
+                                    <!-- Busy -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Busy</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-items">
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar8.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-danger"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Andrea Gardner</div>
+                                                        <div class="font-w400 font-size-sm text-muted">UI Designer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Busy -->
+
+                                    <!-- Away -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Away</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-items">
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar11.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">David Fuller</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Copywriter</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar8.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Danielle Jones</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Writer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Away -->
+
+                                    <!-- Offline -->
+                                    <div class="block-content block-content-sm block-content-full bg-body">
+                                        <span class="text-uppercase font-size-sm font-w700">Offline</span>
+                                    </div>
+                                    <div class="block-content">
+                                        <ul class="nav-items">
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar11.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-muted"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Justin Hunt</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Teacher</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar2.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-muted"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Amber Harvey</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Photographer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar1.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-muted"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Carol Ray</div>
+                                                        <div class="font-w400 font-size-sm text-muted">Front-end Developer</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="media py-2" href="be_pages_generic_profile.html">
+                                                    <div class="mx-3 overlay-container">
+                                                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar15.jpg" alt="">
+                                                        <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-muted"></span>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="font-w600">Justin Hunt</div>
+                                                        <div class="font-w400 font-size-sm text-muted">UX Specialist</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END Offline -->
+
+                                    <!-- Add People -->
+                                    <div class="block-content row justify-content-center border-top">
+                                        <div class="col-9">
+                                            <a class="btn btn-block btn-hero-primary" href="javascript:void(0)">
+                                                <i class="fa fa-fw fa-plus mr-1"></i> Add People
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- END Add People -->
+                                </div>
+                            </div>
+                            <!-- END People -->
+
+                            <!-- Profile -->
+                            <div class="tab-pane pull-x fade fade-up" id="so-profile" role="tabpanel">
+                                <form action="https://sudeeptanwar.in/be_pages_dashboard.html" method="POST" onsubmit="return false;">
+                                    <div class="block mb-0">
+                                        <!-- Personal -->
+                                        <div class="block-content block-content-sm block-content-full bg-body">
+                                            <span class="text-uppercase font-size-sm font-w700">Personal</span>
+                                        </div>
+                                        <div class="block-content block-content-full">
+                                            <div class="form-group">
+                                                <label>Username</label>
+                                                <input type="text" readonly class="form-control" id="staticEmail" value="Admin">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="so-profile-name">Name</label>
+                                                <input type="text" class="form-control" id="so-profile-name" name="so-profile-name" value="George Taylor">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="so-profile-email">Email</label>
+                                                <input type="email" class="form-control" id="so-profile-email" name="so-profile-email" value="g.taylor@example.com">
+                                            </div>
+                                        </div>
+                                        <!-- END Personal -->
+
+                                        <!-- Password Update -->
+                                        <div class="block-content block-content-sm block-content-full bg-body">
+                                            <span class="text-uppercase font-size-sm font-w700">Password Update</span>
+                                        </div>
+                                        <div class="block-content block-content-full">
+                                            <div class="form-group">
+                                                <label for="so-profile-password">Current Password</label>
+                                                <input type="password" class="form-control" id="so-profile-password" name="so-profile-password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="so-profile-new-password">New Password</label>
+                                                <input type="password" class="form-control" id="so-profile-new-password" name="so-profile-new-password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="so-profile-new-password-confirm">Confirm New Password</label>
+                                                <input type="password" class="form-control" id="so-profile-new-password-confirm" name="so-profile-new-password-confirm">
+                                            </div>
+                                        </div>
+                                        <!-- END Password Update -->
+
+                                        <!-- Options -->
+                                        <div class="block-content block-content-sm block-content-full bg-body">
+                                            <span class="text-uppercase font-size-sm font-w700">Options</span>
+                                        </div>
+                                        <div class="block-content">
+                                            <div class="custom-control custom-checkbox custom-control-primary mb-1">
+                                                <input type="checkbox" class="custom-control-input" id="so-settings-status" name="so-settings-status" value="1">
+                                                <label class="custom-control-label" for="so-settings-status">Online Status</label>
+                                            </div>
+                                            <p class="text-muted font-size-sm">
+                                                Make your online status visible to other users of your app
+                                            </p>
+                                            <div class="custom-control custom-checkbox custom-control-primary mb-1">
+                                                <input type="checkbox" class="custom-control-input" id="so-settings-notifications" name="so-settings-notifications" value="1" checked>
+                                                <label class="custom-control-label" for="so-settings-notifications">Notifications</label>
+                                            </div>
+                                            <p class="text-muted font-size-sm">
+                                                Receive desktop notifications regarding your projects and sales
+                                            </p>
+                                            <div class="custom-control custom-checkbox custom-control-primary mb-1">
+                                                <input type="checkbox" class="custom-control-input" id="so-settings-updates" name="so-settings-updates" value="1" checked>
+                                                <label class="custom-control-label" for="so-settings-updates">Auto Updates</label>
+                                            </div>
+                                            <p class="text-muted font-size-sm">
+                                                If enabled, we will keep all your applications and servers up to date with the most recent features automatically
+                                            </p>
+                                        </div>
+                                        <!-- END Options -->
+
+                                        <!-- Submit -->
+                                        <div class="block-content row justify-content-center border-top">
+                                            <div class="col-9">
+                                                <button type="submit" class="btn btn-block btn-hero-primary">
+                                                    <i class="fa fa-fw fa-save mr-1"></i> Save
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- END Submit -->
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- END Profile -->
+                        </div>
+                    </div>
+                    <!-- END Side Overlay Tabs -->
+                </div>
+                <!-- END Side Content -->
+            </aside>
+            <!-- END Side Overlay -->
+
+            <!-- Sidebar -->
+            <!--
+                Sidebar Mini Mode - Display Helper classes
+
+                Adding 'smini-hide' class to an element will make it invisible (opacity: 0) when the sidebar is in mini mode
+                Adding 'smini-show' class to an element will make it visible (opacity: 1) when the sidebar is in mini mode
+                    If you would like to disable the transition animation, make sure to also add the 'no-transition' class to your element
+
+                Adding 'smini-hidden' to an element will hide it when the sidebar is in mini mode
+                Adding 'smini-visible' to an element will show it (display: inline-block) only when the sidebar is in mini mode
+                Adding 'smini-visible-block' to an element will show it (display: block) only when the sidebar is in mini mode
+            -->
+            <nav id="sidebar" aria-label="Main Navigation">
+                <!-- Side Header -->
+                <div class="content-header">
+                    <div class="bg-black-10">
+                        <!-- Logo -->
+                        <a class="font-w600 text-white tracking-wide" href="index-2.html">
+                            <span class="smini-hidden">
+                                <!--Dash<span class="opacity-75">mix</span>-->
+                                <!-- Dr. Sudeep Tanwar -->
+                            </span>
+                        </a>
+                        <!-- END Logo -->
+                        <!-- Options -->
+                        <div>
+                            <!-- Toggle Sidebar Style -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <!-- Class Toggle, functionality initialized in Helpers.coreToggleClass() -->
+                            <!--<a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');" href="javascript:void(0)">
+                                <i class="fa fa-toggle-off" id="sidebar-style-toggler"></i>
+                            </a>-->
+                            <!-- END Toggle Sidebar Style -->
+
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
+                                <i class="fa fa-times-circle"></i>
+                            </a>
+                            <!-- END Close Sidebar -->
+                        </div>
+                        <!-- END Options -->
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+
+                <!-- Sidebar Scrolling -->
+                <div class="js-sidebar-scroll">
+                    
+                    <div class="content-side content-side-full bg-black-10 text-center">
+                        <div class="smini-hide">
+                            <a class="img-link d-block mb-3" href="#">
+                                <img class="img-avatar img-avatar128 img-avatar-thumb" src="assets\media\avatars\profile.jpg" alt="">
+                            </a>
+                            <a class="font-w600 text-dual" href="#">
+                                Soniya Jain
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Side Navigation -->
+                    <div class="content-side">
+                        <ul class="nav-main">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="index-3.html">
+                                    <i class="nav-main-link-icon fa fa-home"></i>
+                                    <span class="nav-main-link-name">Home</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="members.html">
+                                    <i class="nav-main-link-icon fa fa-users"></i>
+                                    <span class="nav-main-link-name">Academic details</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+
+                             <li class="nav-main-item">
+                                <a class="nav-main-link" href="members.html">
+                                    <i class="nav-main-link-icon fa fa-users"></i>
+                                    <span class="nav-main-link-name"> Teaching experience</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+
+                             <li class="nav-main-item">
+                                <a class="nav-main-link" href="members.html">
+                                    <i class="nav-main-link-icon fa fa-users"></i>
+                                    <span class="nav-main-link-name">Projects</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <!-- Type 1 Submenu -->
+                           <!--  <li class="nav-main-item">
+                                <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                    <i class="nav-main-link-icon fa fa-book"></i>
+                                    <span class="nav-main-link-name"> Teaching experience</span>
+                                </a>
+                                <ul class="nav-main-submenu">
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="mostcited.html">
+                                            <i class="nav-main-link-icon fa fa-quote-right"></i>
+                                            <span class="nav-main-link-name">Highly Cited Articles</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="mostdownload.html">
+                                            <i class="nav-main-link-icon fa fa-download"></i>
+                                            <span class="nav-main-link-name">Most Downloaded Articles</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="journals.html">
+                                            <i class="nav-main-link-icon fa fa-book-open"></i>
+                                            <span class="nav-main-link-name">Journals</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="conference.html">
+                                            <i class="nav-main-link-icon fa fa-chalkboard-teacher"></i>
+                                            <span class="nav-main-link-name">Conferences</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="bookchapter.html">
+                                            <i class="nav-main-link-icon fa fa-book-reader"></i>
+                                            <span class="nav-main-link-name">Book Chapters</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- Type 1 Submenu END-->
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="patents.html">
+                                    <i class="nav-main-link-icon fa fa-certificate"></i>
+                                    <span class="nav-main-link-name">Publication details</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="books.html">
+                                    <i class="nav-main-link-icon fa fa-book"></i>
+                                    <span class="nav-main-link-name">Professional Activities and Contribution</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="projects.html">
+                                    <i class="nav-main-link-icon fa fa-project-diagram"></i>
+                                    <span class="nav-main-link-name">Workshop</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="internationalresearchconsultancy.html">
+                                    <i class="nav-main-link-icon fa fa-comment"></i>
+                                    <span class="nav-main-link-name">FDP</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="professional.html">
+                                    <i class="nav-main-link-icon fa fa-user-tie"></i>
+                                    <span class="nav-main-link-name">STTP</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                          
+                            <!-- Type 1 Submenu -->
+                          <!--   <li class="nav-main-item">
+                                <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+                                    <i class="nav-main-link-icon fa fa-award"></i>
+                                    <span class="nav-main-link-name">Awards and Recognitions</span>
+                                </a>
+                                <ul class="nav-main-submenu">
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="awards.html">
+                                            <i class="nav-main-link-icon fa fa-award"></i>
+                                            <span class="nav-main-link-name">Awards and Recognition</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="travelgrants.html">
+                                            <i class="nav-main-link-icon fa fa-plane-departure"></i>
+                                            <span class="nav-main-link-name">Travel Grants</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-main-item">
+                                        <a class="nav-main-link" href="bestpaper.html">
+                                            <i class="nav-main-link-icon fa fa-trophy"></i>
+                                            <span class="nav-main-link-name">Best Paper Award</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- Type 1 Submenu END-->
+
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="collaboration.html">
+                                    <i class="nav-main-link-icon fa fa-handshake"></i>
+                                    <span class="nav-main-link-name">MOOC Courses</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="gallery.html">
+                                    <i class="nav-main-link-icon fa fa-photo-video"></i>
+                                    <span class="nav-main-link-name">Achievments</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+                            
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="contact.html">
+                                    <i class="nav-main-link-icon fa fa-phone fa-flip-horizontal"></i>
+                                    <span class="nav-main-link-name">Contact</span>
+                                    <!--<span class="nav-main-link-badge badge badge-pill badge-success">3</span>-->
+                                </a>
+                            </li>
+
+                          
+                        </ul>
+                    </div>
+                    <!-- END Side Navigation -->
+                </div>
+                <!-- END Sidebar Scrolling -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div>
+                        <!-- Toggle Sidebar -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                        <button type="button" class="btn btn-dual" data-toggle="layout" data-action="sidebar_toggle">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        <!-- END Toggle Sidebar -->
+                    </div>
+                    <div><span class="h3 text-primary" id="header-title" style="opacity: 0; transition: all 0.5s;">SUDEEP TANWAR'S RESEARCH GROUP</span></div>
+                    <!-- END Left Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header bg-header-dark">
+                    <div class="bg-white-10">
+                        <div class="content-header">
+                            <form class="w-100" action="https://sudeeptanwar.in/be_pages_generic_search.html" method="POST">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                        <button type="button" class="btn btn-alt-primary" data-toggle="layout" data-action="header_search_off">
+                                            <i class="fa fa-fw fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-header-dark">
+                    <div class="bg-white-10">
+                        <div class="content-header">
+                            <div class="w-100 text-center">
+                                <i class="fa fa-fw fa-sun fa-spin text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+                        <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+                <div class="content">
+                    
+                    <!-- Rolling news -->
+                    <div class="row row-deck">
+                        <div class="col-md-12">
+                            <!-- <div class="block block-rounded"> -->
+                            <div>
+                                <!-- <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Vacancies</h3>
+                                </div> -->
+                                <div class="block-content">
+                                    <marquee><h3 class="text-primary">Internships: Bright students may contact with CV for possible internship positions.
+                                    Interested candidates can send his/her CV to sudeeptanwar149@gmail.com</h3></marquee>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <!-- END Rolling news -->
+                    
+                    
+
+                    <h1 class="text-center">SUDEEP TANWAR'S RESEARCH GROUP</h1>
+
+                    <!-- Image Sliders -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Slider with autoplay and white inner dots -->
+                            <div class="block">
+                                <div class="js-slider slick-dotted-inner slick-dotted-white" data-dots="true" data-autoplay="true" data-autoplay-speed="3000">
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/5.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/1.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/4.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/2.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/6.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/3.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid" src="assets/media/photos/slider/7.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Slider with autoplay and white inner dots -->
+                        </div>
+                    </div>
+                    <!-- END Image Sliders -->
+
+
+                    <!-- Highlights-->
+                    <br><br><br>
+                    <h1 class="text-center">Highlights of the Group</h1>
+                    <div class="row">
+                        <div class="col-md-4 order-md-1">
+                            <!-- News -->
+                            <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Recent News</h3>
+                                </div>
+                                <div class="block-content overflow-auto" style="height: 650px;">
+                                    <ul class="fa-ul list-icons">
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://www.journals.elsevier.com/journal-of-information-security-and-applications/awards/dr-kw-wong-annual-best-paper-award-2021' class="text-dark">Congratulations to <span class='text-info'>Sudeep Tanwar</span>, <span class='text-info'>Karan Parekh</span>, and <span class='text-info'>Richard Evans</span> for recieving <span class="text-info">Dr KW Wong Annual Best Paper Award 2021</span> for their paper titled <span class='text-info'> Blockchain-based electronic healthcare record system for healthcare 4.0 applications</span>.</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                January, 2022                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark"><span class='text-info'>Rajesh Gupta</span> and <span class='text-info'>Tejal Rathod</span> have received <span class='text-info'>BEST PAPER AWARD</span> from the <span class='text-info'>2021 IEEE 6th International Conference on Computing, Communication and Automation (ICCCA)</span>, Galgotia University, India held on December 17-19, 2021 for their paper titled, <span class='text-info'>Optimal Resource Allocation for Quality-of-Service in D2D Communication Underlying Imperfect CSI</span></a></div>
+                                            <div class="text-muted font-size-sm">
+                                                December, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark"><span class='text-info'>Dr. Sudeep Tanwar</span> has beenÂ recommended by the Award CommitteeÂ forÂ anÂ <span class='text-info'>IEEE Outstanding Leadership Award</span>Â from the IEEE Technical Committee on Scalable Computing in collaboration with the 24thÂ IEEE International Conference on Computational Science and Engineering (CSE 2021) held at Shenyang, China.<br />IEEE Technical Committee onÂ Scalable Computing (TCSC)Â award recognizes leadership contributions with impact beyond the services computing research community to Computer Science, Engineering and Education.</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                November, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/3' class="text-dark"><span class='text-info'>Dr. Sudeep Tanwar</span> is in the list of Top <span class='text-info'>2%</span> of scientists across the globe published by Stanford University(consecutively for the last three years) </a></div>
+                                            <div class="text-muted font-size-sm">
+                                                October, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark">Congratulations to <span class='text-info'>Rajesh Gupta, Tejal Rathod, Dakshita Reebadiya</span> (Alumni of ST Lab) for earning the <span class='text-info'>Excellent Contribution Award</span> in the IWSS-2021 (in association with the 13th IEEE ECAI-2021 Conference held at Pitesti, Romania, 01 - 03 July 2021)</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                July, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='http://www.guide2research.com/scientists/IN' class="text-dark">Dr Sudeep Tanwar secured <span class='text-info'>55th</span> rank in the list of <span class='text-info'>â€œTop cited Scientists (Computer Science & Electronics-scientist based on h-index, citations, and number of DBLP documents) within Indiaâ€ </span></a></div>
+                                            <div class="text-muted font-size-sm">
+                                                July, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark">Congratulations to <span class='text-info'>Farnazbanu Patel</span> (Alumni of ST Lab) for earning the <span class='text-info'>Best Paper Award</span> in the <span class='text-info'>17th IEEE ComSoc IWCMC 2021 Conference</span> held at Harbin, China, June 28th-July 2nd, 2021</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                July, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark">Feeling motivated to share Research Outcomes of Sudeep Tanwar's Research Group (ST Lab) (http://sudeeptanwar.in/) as per recently released SCIE, SSCI-JCR 2020.<br>Cumulative Impact Factor (published papers only): <span class='text-info'>485.107</span><br>Number of SCI Journals: <span class='text-info'>102 (including 19 Transactions)</span><br>Highest Impact factor: <span class='text-info'>11. 979 (03 articles in IEEE WCM-11.979 and 08 articles in IEEE Networks-10.693)</span><br>Average Impact factor/paper: <span class='text-info'>4.755</span></a></div>
+                                            <div class="text-muted font-size-sm">
+                                                July, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://icc2021.ieee-icc.org/' class="text-dark">Congratulations to <span class='text-info'>Rajesh Gupta</span> for recieving a Foreign Travel Grant to attend IEEE ICC 2021 Conference</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                May, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://www.sciencedirect.com/science/article/abs/pii/S1874490721000926' class="text-dark">Congratulations to <span class='text-info'>Rajesh Gupta</span> along with Faculty Guides for research paper publication in Physical Communication, Elsevier (SCI, Impact Factor: 1.594)</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                May, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://www.amity.edu/iciem2021/' class="text-dark">Congratulations to <span class='text-info'>Prof. Pronoya Bhattacharya</span> for virtually presenting a research paper at 2nd International Conference on Intelligent Engineering and Management (ICIEM-2021), Amity University, London, UK</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                April, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://ieeexplore.ieee.org/abstract/document/9399657' class="text-dark">Congratulations to <span class='text-info'>Nikunjkumar Patel</span> and <span class='text-info'>Shivani Patel</span> along with Faculty Guides for publication of their research paper in IEEE IoT Journal (SCI, Impact Factor: 9.936)</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                April, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://cse.nirmauni.ac.in/dnew/6801/' class="text-dark">Congratulations to <span class='text-info'>Dr. Sudeep Tanwar</span> for joining as a Professor in the Department of Computer Science and Engineering, Nirma University, India</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                April, 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/ett.4286' class="text-dark">Congratulations to <span class='text-info'>Nirav Patel and Arpit Shukla</span> along with Faculty Guides for publishing a research paper in Transactions on  Emerging Telecommunications Technologies, Wiley (SCI, Impact Factor: 1.594)</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                April , 2021                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <span class="fa-li text-primary">
+                                                <i class="fa fa-newspaper"></i>
+                                            </span>
+                                            <div class="font-w600 font-size-sm text-justify"><a href='#' class="text-dark">Congratulations to <span class='text-info'>Mohil Patel</span> with <span class='text-info'>Dr. Sudeep Tanwar</span> for completing an International research consultancy project with Lancaster University, Lancaster, UK</a></div>
+                                            <div class="text-muted font-size-sm">
+                                                April, 2021                                            </div>
+                                        </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                            <!-- END News -->
+                        </div>
+                        <div class="col-md-8 order-md-0">
+                            <!-- Publications -->
+                            <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Publications</h3>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="row text-center">
+                                        <div class="col-md-6 col-xl-6">
+                                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)"  style="background-color: #ED6A5A;">
+                                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                                    <div class="mr-3">
+                                                        <p class="text-white font-size-h3 font-w500 mb-0">
+                                                            181                                                        </p>
+                                                        <p class="text-white mb-0 font-w500">
+                                                            Journal Publications
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa fa-2x fa-book text-black-50"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-xl-6">
+                                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)"  style="background-color: #ED6A5A;">
+                                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                                    <div class="mr-3">
+                                                        <p class="text-white font-size-h3 font-w500 mb-0">
+                                                            114                                                        </p>
+                                                        <p class="text-white mb-0 font-w500">
+                                                            Conference Proceedings
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa fa-2x fa-chalkboard-teacher text-black-50"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-xl-6">
+                                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)" style="background-color: #ED6A5A;">
+                                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                                    <div class="mr-3">
+                                                        <p class="text-white font-size-h3 font-w500 mb-0">
+                                                            51                                                        </p>
+                                                        <p class="text-white mb-0 font-w500">
+                                                            Book Chapters
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa fa-2x fa-book-open text-black-50"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-xl-6">
+                                            <a class="block block-rounded block-link-shadow" href="javascript:void(0)" style="background-color: #ED6A5A;">
+                                                <div class="block-content block-content-full d-flex align-items-center justify-content-between">
+                                                    <div class="mr-3">
+                                                        <p class="text-white font-size-h3 font-w500 mb-0">
+                                                            27                                                        </p>
+                                                        <p class="text-white mb-0 font-w500">
+                                                            Authored/Edited Books
+                                                        </p>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fa fa-2x fa-book-reader text-black-50"></i>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Publications -->
+
+                            <!-- Citations -->
+                                                        <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Citations</h3>
+                                </div>
+                                <div class="block-content">
+                                    <div class="row" style="padding:10px">
+                                        <div class="col-xl-6 js-appear-enabled animated fadeIn" data-toggle="appear">
+                                            <div class="block block-rounded text-center" style="box-shadow: 0 1px 3px rgb(206 211 220 / 50%), 0 1px 2px rgb(206 211 220 / 50%);">
+                                                <div class="block-content bg-info">
+                                                    <p class="h5 font-w600 text-white">
+                                                        Google Scholar
+                                                    </p>
+                                                </div>
+                                                <div class="block-content block-content-full bg-info-light">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <!-- Pie Chart Container -->
+                                                            <div class="js-pie-chart pie-chart js-pie-chart-enabled" data-percent="20" data-line-width="3" data-size="70" data-bar-color="#82b54b" data-track-color="#e9e9e9">
+                                                                <span class="font-w600 h5">10022</span>
+                                                                <canvas height="78" width="78" style="height: 70px; width: 70px;"></canvas>
+                                                            </div>
+                                                            <p class="font-w600">
+                                                                Citations
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <!-- Pie Chart Container -->
+                                                            <div class="js-pie-chart pie-chart js-pie-chart-enabled" data-percent="60" data-line-width="3" data-size="70" data-bar-color="#ffb119" data-track-color="#e9e9e9">
+                                                                <span class="font-w600 h5">56</span>
+                                                                <canvas height="78" width="78" style="height: 70px; width: 70px;"></canvas>
+                                                            </div>
+                                                            <p class="font-w600">
+                                                                h-index
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <!-- Pie Chart Container -->
+                                                            <div class="js-pie-chart pie-chart js-pie-chart-enabled" data-percent="40" data-line-width="3" data-size="70" data-bar-color="#82b54b" data-track-color="#e9e9e9">
+                                                                <span class="font-w600 h5">160</span>
+                                                                <canvas height="78" width="78" style="height: 70px; width: 70px;"></canvas>
+                                                            </div>
+                                                            <p class="font-w600">
+                                                                i10-index
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 js-appear-enabled animated fadeIn" data-toggle="appear">
+                                            <div class="block block-rounded text-center" style="box-shadow: 0 1px 3px rgb(206 211 220 / 50%), 0 1px 2px rgb(206 211 220 / 50%);">
+                                                <div class="block-content bg-warning">
+                                                    <p class="h5 font-w600 text-white">
+                                                        Scopus
+                                                    </p>
+                                                </div>
+                                                <div class="block-content block-content-full bg-warning-light">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <!-- Pie Chart Container -->
+                                                            <div class="js-pie-chart pie-chart js-pie-chart-enabled" data-percent="90" data-line-width="3" data-size="70" data-bar-color="#82b54b" data-track-color="#e9e9e9">
+                                                                <span class="font-w600 h5">6637</span>
+                                                                <canvas height="78" width="78" style="height: 70px; width: 70px;"></canvas>
+                                                            </div>
+                                                            <p class="font-w600">
+                                                                Citations
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <!-- Pie Chart Container -->
+                                                            <div class="js-pie-chart pie-chart js-pie-chart-enabled" data-percent="10" data-line-width="3" data-size="70" data-bar-color="#e04f1a" data-track-color="#e9e9e9">
+                                                                <span class="font-w600 h5">45</span>
+                                                                <canvas height="78" width="78" style="height: 70px; width: 70px;"></canvas>
+                                                            </div>
+                                                            <p class="font-w600">
+                                                                h-index
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Citations -->
+                        </div>
+                    </div>
+
+
+                    <br><br><br>
+                    <h1 class="text-center font-w400"><span class="font-w600">S</span>udeep <span class="font-w600">T</span>anwar's Lab</span></h1>
+                    <!-- CONTENT-->
+                    <div class="row row-deck">
+                        <!-- About the Group -->
+                        <div class="col-md-12">
+                            <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">About the Lab</h3>
+                                </div>
+                                <div class="block-content text-justify">
+                                    <p>ST Lab is a group of researchers working with the research mentorship of <b>Professor Sudeep Tanwar</b>, Department of Computer Science and Engineering at the Institute of Technology, Nirma University, India. ST Lab focuses on cutting-edge networking technologies especially, Sensor Networks, Smart Grid Communications, Internet of Things, and Blockchain Networking.
+                                        Lab mainly focuses on simulation, analytical, & other experimental methodologies of research and publishing the results for the benefit of society. Our research is fundamental, aimed at developing and evaluating new generic blockchain & networking concepts, and application-driven, motivated by important application areas, such as transaction processing, autonomous vehicles, D2D communication, and smart grid.</p>
+                                    <p>Moreover, investigating how a smart society would function if blockchain technology were adopted at all levels. Making the different use cases for how blockchain technology can improve different verticals of industry 4.0.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END About the Group -->
+
+                        <!-- Experts at the our Research Group -->
+                        <div class="col-md-12">
+                            <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Experts at our Lab</h3>
+                                </div>
+                                <div class="block-content text-justify">
+                                    <p>We employ a dedicated team of researchers for our continued and successful research and always welcome high-performance, dedicated and motivated students. Our key strength is the diversity of our team members in terms of their education and skills. ST Lab gives opportunities to graduates, scholars, computer scientists and new technology experts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Experts at the our Research Group -->
+
+                        <!-- Who we are -->
+                        <div class="col-md-12">
+                            <div class="block block-rounded">
+                                <div class="block-header block-header-default bg-info">
+                                    <h3 class="block-title font-w600 text-white">Who we are</h3>
+                                </div>
+                                <div class="block-content text-justify">
+                                    <p>ST Lab employs both full-time and part-time researchers with a wide range of backgrounds and technical skills. We combine technical knowledge with business and societal aspects, and we are convinced that complex social, technological and business issues can be solved with interdisciplinary approaches.
+                                        We are working towards a common goal and provide our researchers with an interdisciplinary and inspiring working environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Who we are -->
+
+                    </div>
+                    <!-- END CONTENT-->
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+<footer id="page-footer" class="bg-body-light">
+    <div class="content py-0">
+        <div class="row font-size-sm">
+            <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-right">
+                Proudly Hosted<!-- with <i class="fa fa-heart text-danger"></i>--> by <a class="font-w600" href="https://hostingspell.com/" target="_blank">HostingSpell</a>
+            </div>
+            <div class="col-sm-6 order-sm-1 text-center text-sm-left">
+                <a class="font-w600" href="index-3.html" target="_blank">Dr. Sudeep Tanwar</a> &copy; <span data-toggle="year-copy"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    headerTitle = document.getElementById('header-title');
+    var displayAfterScroll = function() {
+        var y = window.scrollY;
+        if(y > 200) {
+            headerTitle.style.opacity = "1";
+        }
+        else {
+            headerTitle.style.opacity = "0";
+        }
+    }
+    window.addEventListener("scroll", displayAfterScroll);
+</script>
+
+<!-- END Footer -->
+            </div>
+            <!-- END Page Container -->
+
+            <!--
+            Dashmix JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+            <script src="assets/js/dashmix.core.min.js"></script>
+
+            <!--
+            Dashmix JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_js/main/app.js
+        -->
+            <script src="assets/js/dashmix.app.min.js"></script>
+            <!-- Page JS Plugins -->
+            <script src="assets/js/plugins/slick-carousel/slick.min.js"></script>
+
+            <!-- Page JS Helpers (Slick Slider Plugin) -->
+            <script>
+                jQuery(function() {
+                    Dashmix.helpers('slick');
+                });
+            </script>
+            </body>
+
+            
+<!-- Mirrored from sudeeptanwar.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Jan 2025 05:02:29 GMT -->
+</html>
